@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-mvp-component-pyec
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:c468eeee660081d3c92248f3e1491b05f859a934293fd486af873bc0c72ac187
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
